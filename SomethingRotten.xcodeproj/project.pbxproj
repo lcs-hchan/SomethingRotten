@@ -11,6 +11,7 @@
 		8BE682C82B03EAA000A98E42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE682C72B03EAA000A98E42 /* ContentView.swift */; };
 		8BE682CA2B03EAA100A98E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE682C92B03EAA100A98E42 /* Assets.xcassets */; };
 		8BE682CD2B03EAA100A98E42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE682CC2B03EAA100A98E42 /* Preview Assets.xcassets */; };
+		8BE682D42B03F04800A98E42 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE682D32B03F04800A98E42 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8BE682C72B03EAA000A98E42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BE682C92B03EAA100A98E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE682CC2B03EAA100A98E42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BE682D32B03F04800A98E42 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8BE682C52B03EAA000A98E42 /* SomethingRottenApp.swift */,
 				8BE682C72B03EAA000A98E42 /* ContentView.swift */,
+				8BE682D32B03F04800A98E42 /* Menu.swift */,
 				8BE682C92B03EAA100A98E42 /* Assets.xcassets */,
 				8BE682CB2B03EAA100A98E42 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE682D42B03F04800A98E42 /* Menu.swift in Sources */,
 				8BE682C82B03EAA000A98E42 /* ContentView.swift in Sources */,
 				8BE682C62B03EAA000A98E42 /* SomethingRottenApp.swift in Sources */,
 			);
