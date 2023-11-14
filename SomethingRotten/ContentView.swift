@@ -24,7 +24,10 @@ struct ContentView: View {
                 }
                 VStack{
                     List{
-                        Menu(Image: "dd", text1: "ff")
+                        Menu(Image1: "dd", text1: "About The Show")
+                        Menu(Image1: "s", text1: "Musical Numbers")
+                        Menu(Image1: "s", text1: "Characters")
+                        Menu(Image1: "ss", text1: "Cast")
                     }
                     .listStyle(.plain)
                 }
