@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct Menu: View {
-    let Image1: String
+    let image1: String
     let text1: String
     var body: some View {
         HStack{
-            Text(Image1)
+            Text(image1)
             Text(text1)
                 .foregroundColor(.white)
             Spacer()
-            Image("chevron.right")
+            Image(systemName: "chevron.right")
+                .resizable()
+                .scaledToFit()
+                .frame(width:7)
+                .foregroundColor(Color("color 1"))
+            
         }
     }
 }
 
 #Preview {
-    Menu(Image1: "sd", text1: "fg")
+    Menu(image1: "sd", text1: "fg")
 }

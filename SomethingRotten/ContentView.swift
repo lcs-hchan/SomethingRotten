@@ -19,15 +19,17 @@ struct ContentView: View {
                     .frame(width: 400)
                 HStack{
                     Text("Production")
-                        .foregroundColor(.red)
+                        .foregroundColor(Color("color1"))
                         Spacer()
                 }
                 VStack{
                     List{
-                        Menu(Image1: "dd", text1: "About The Show")
-                        Menu(Image1: "s", text1: "Musical Numbers")
-                        Menu(Image1: "s", text1: "Characters")
-                        Menu(Image1: "ss", text1: "Cast")
+                        Menu(image1: "",text1: "About The Show")
+                        Menu(image1: "s", text1: "Musical Numbers")
+                        Menu(image1: "s", text1: "Characters")
+                        Menu(image1: "ss", text1: "Cast")
+                        Menu(image1: "df", text1: "Crew")
+                        Menu(image1: "sdf", text1: "Faculty")
                     }
                     .listStyle(.plain)
                 }
