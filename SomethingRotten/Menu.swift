@@ -12,7 +12,10 @@ struct Menu: View {
     let text1: String
     var body: some View {
         HStack{
-            Text(image1)
+            Image(systemName: image1)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30)
                 .foregroundColor(Color("color 3"))
             Text(text1)
                 .foregroundColor(.white)
@@ -24,9 +27,10 @@ struct Menu: View {
                 .foregroundColor(Color("color 1"))
             
         }
+        
     }
 }
 
 #Preview {
-    Menu(image1: "sd", text1: "fg")
+    Menu(image1: "bolt", text1: "fg")
 }
