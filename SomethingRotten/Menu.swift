@@ -12,15 +12,7 @@ struct Menu: View {
     let text1: String
     var body: some View {
         HStack{
-            Image(systemName: image1)
-                .resizable()
-                .scaledToFit()
-                .padding(2)
-                .frame(width:50)
-                .foregroundColor(Color("color 3"))
-            Text(text1)
-                .foregroundColor(.white)
-                .font(.system(size: 20))
+            Label(text1, systemImage: image1)
             Spacer()
             Image(systemName: "chevron.right")
                 .resizable()

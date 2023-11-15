@@ -57,28 +57,32 @@ struct ContentView: View {
 
 #Preview {
     TabView{
-        ContentView()
-            .tabItem {
-                Image(systemName: "music.mic")
-                Text("Productions")
-            }
-            Text("Search")
-            .tabItem {
-                Image(systemName: "magnifyingglass")
+        Group{
+            
+            ContentView()
+                .tabItem {
+                    Image(systemName: "music.mic")
+                    Text("Productions")
+                }
                 Text("Search")
-            }
-        Text("Favourites")
-            .tabItem{
-                Image(systemName: "star.fill")
-                Text("Favourites")
-            }
-        Text("Questions")
-            .tabItem {
-                Image(systemName: "person.fill.questionmark")
-                Text("Questions")
-            }
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+                }
+            Text("Favourites")
+                .tabItem{
+                    Image(systemName: "star.fill")
+                    Text("Favourites")
+                }
+            Text("Questions")
+                .tabItem {
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Questions")
+                }
+        }
+        
+        
     }
-
     .accentColor(Color("color 3"))
 
 }
