@@ -13,6 +13,7 @@ struct Menu: View {
     var body: some View {
         HStack{
             Text(image1)
+                .foregroundColor(Color("color 3"))
             Text(text1)
                 .foregroundColor(.white)
             Spacer()
