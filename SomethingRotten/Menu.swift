@@ -15,16 +15,19 @@ struct Menu: View {
             Image(systemName: image1)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 30)
+                .frame(height:25)
                 .foregroundColor(Color("color 3"))
+             
             Text(text1)
                 .foregroundColor(.white)
+                .font(.system(size: 20))
             Spacer()
             Image(systemName: "chevron.right")
                 .resizable()
                 .scaledToFit()
-                .frame(width:7)
+                .frame(width:10)
                 .foregroundColor(Color("color 1"))
+                .padding()
             
         }
         

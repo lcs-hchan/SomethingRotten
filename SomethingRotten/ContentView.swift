@@ -35,26 +35,49 @@ struct ContentView: View {
                     
                     List{
                         Section(header:Text("PRODUCTION")){
-                            Menu(image1: "",text1: "About The Show")
-                            Menu(image1:"", text1: "Musical Numbers")
-                            Menu(image1: "s", text1: "Characters")
-                            Menu(image1: "ss", text1: "Cast")
-                            Menu(image1: "", text1: "Crew")
+                            Menu(image1: "list.and.film",text1: "About The Show")
+                            Menu(image1:"music.note.list", text1: "Musical Numbers")
+                            Menu(image1: "person.crop.artframe", text1: "Characters")
+                            Menu(image1: "person.3.fill", text1: "Cast")
+                            Menu(image1: "wrench.and.screwdriver", text1: "Crew")
                             Menu(image1: "cup.and.saucer.fill", text1: "Faculty")
                            
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
                         .listRowBackground(Color("color 2"))
                     }
+                    .frame(height:400)
                     .listStyle(.plain)
                 }
                    
             }
-            .padding()
+            
         }
     }
 }
 
 #Preview {
-    ContentView()
+    TabView{
+        ContentView()
+            .tabItem {
+                Image(systemName: "music.mic")
+                Text("Productions")
+            }
+            Text("Search")
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Search")
+            }
+        Text("Favourites")
+            .tabItem{
+                Image(systemName: "star.fill")
+                Text("Favourites")
+            }
+        Text("Questions")
+            .tabItem {
+                Image(systemName: "person.fill.questionmark")
+                Text("Questions")
+            }
+    }
+    .accentColor(Color("color 3"))
 }

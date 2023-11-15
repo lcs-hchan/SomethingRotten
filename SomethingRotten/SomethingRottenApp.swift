@@ -11,7 +11,25 @@ import SwiftUI
 struct SomethingRottenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "music.mic")
+                        Text("Productions")
+                    }
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Search")
+                    }
+                    .tabItem{
+                        Image(systemName: "star.fill")
+                        Text("Favourites")
+                    }
+                    .tabItem {
+                        Image(systemName: "person.fill.questionmark")
+                        Text("Questions")
+                    }
+            }
         }
     }
 }
