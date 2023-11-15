@@ -15,9 +15,9 @@ struct Menu: View {
             Image(systemName: image1)
                 .resizable()
                 .scaledToFit()
-                .frame(height:25)
+                .padding(2)
+                .frame(width:50)
                 .foregroundColor(Color("color 3"))
-             
             Text(text1)
                 .foregroundColor(.white)
                 .font(.system(size: 20))
@@ -25,7 +25,7 @@ struct Menu: View {
             Image(systemName: "chevron.right")
                 .resizable()
                 .scaledToFit()
-                .frame(width:10)
+                .frame(width:9)
                 .foregroundColor(Color("color 1"))
                 .padding()
             

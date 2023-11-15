@@ -20,7 +20,7 @@ struct ContentView: View {
                     Image(systemName: "square.grid.3x2")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 30)
+                        .frame(width: 33)
                         .foregroundColor(Color("color 3"))
                         .padding()
 
@@ -32,7 +32,6 @@ struct ContentView: View {
                     .frame(width: 400)
                 
                 VStack{
-                    
                     List{
                         Section(header:Text("PRODUCTION")){
                             Menu(image1: "list.and.film",text1: "About The Show")
@@ -79,5 +78,7 @@ struct ContentView: View {
                 Text("Questions")
             }
     }
+
     .accentColor(Color("color 3"))
+
 }
