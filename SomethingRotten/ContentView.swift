@@ -42,7 +42,7 @@ struct ContentView: View {
                             Menu(image1: "cup.and.saucer.fill", text1: "Faculty")
                            
                         }
-                        .listRowInsets(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
+                        .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                         .listRowBackground(Color("color 2"))
                     }
                     .frame(height:400)
